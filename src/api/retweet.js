@@ -1,3 +1,5 @@
+'use strict'
+
 const Twit = require('twit')
 const unique = require('unique-random-array')
 const config = require('../config')
@@ -24,11 +26,10 @@ const retweet = () => {
       // grab tweet ID to retweet
       const rando = Math.floor(Math.random() * param.searchCount) + 1
       let retweetId
-
       try {
         retweetId = data.statuses[rando].id_str      
       } catch (e) {
-        console.log('ERRORDERP: Cannot assign retweeID')
+        console.log('ERRORDERP: Cannot assign retweetId ' + e)
         return
       }
 

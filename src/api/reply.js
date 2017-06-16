@@ -1,7 +1,8 @@
+'use strict'
+
 const Twit = require('twit')
 const unique = require('unique-random-array')
 const config = require('../config')
-
 const param = config.twitterConfig
 const randomReply = unique(param.randomReply.split('|'))
 
@@ -13,12 +14,18 @@ function tweetNow(text) {
     status: text
   }
 
+let selfName = text.search('/@zuchanannetwork/i')
+  
+  if (selfName!= -1 ){
+      console.log(' oops tweeting to self....skip! ')
+  }else {
   bot.post('statuses/update', tweet, (err, data, response) => {
     if (err) {
       console.log('ERRORDERP Reply', err)
     }
     console.log('SUCCESS: Replied: ', text)
-  })
+    })
+  }
 }
 
 // function: replies to user who followed
