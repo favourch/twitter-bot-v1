@@ -5,16 +5,16 @@ const unique = require('unique-random-array')
 const config = require('../config')
 
 const param = config.twitterConfig
-const queryString = unique(param.queryString.split(','))
+const hashTagString = unique(param.queryString.split(','))
 
 const bot = new Twit(config.twitterKeys)
 
-const retweet = () => {
+const favorite = () => {
 
-  const query = queryString()
+  const hashtag = hashTagString()
 
   bot.get('search/tweets', {
-    q: query,
+    q: hashtag,
     result_type: param.resultType,
     lang: param.language,
     filter: 'safe',
@@ -47,4 +47,4 @@ const retweet = () => {
   })
 }
 
-module.exports = retweet
+module.exports = favorite

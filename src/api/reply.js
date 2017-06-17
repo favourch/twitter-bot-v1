@@ -6,6 +6,7 @@ const config = require('../config')
 const param = config.twitterConfig
 const randomReply = unique(param.randomReply.split('|'))
 
+
 const bot = new Twit(config.twitterKeys)
 
 // function: tweets back to user who followed
@@ -39,5 +40,6 @@ const reply = (event) => {
 
   tweetNow(res)
 }
+
 
 module.exports = reply
