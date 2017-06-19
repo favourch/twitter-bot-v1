@@ -22,7 +22,7 @@ const retweet = () => {
   }, (err, data, response) => {
     if (err) {
       console.log('ERRORDERP: Cannot Search Tweet!, Description here: ', err)
-    } else {
+    } else if ((data && data.statuses[0])) {
       // grab tweet ID to retweet
       const rando = Math.floor(Math.random() * param.searchCount) + 1
       let retweetId
@@ -43,6 +43,9 @@ const retweet = () => {
         }
         console.log('SUCCESS: RT: ', data.statuses[rando].text, 'RANDO ID: ', rando)
       })
+    }
+    else {
+      console.log ('No search tweets returned for ' + query)
     }
   })
 }
