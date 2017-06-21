@@ -40,6 +40,7 @@ const favorite = () => {
       }, (err, response) => {
         if (err) {
           console.log('ERRORDERP: favorite!')
+          console.log ('*** favorite threw up ' + err + ' error ----------------------***')
         }
         console.log('SUCCESS: favorited!! : ', data.statuses[rando].text, 'RANDO ID: ', rando)
       })

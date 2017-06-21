@@ -39,7 +39,7 @@ const retweet = () => {
         id: retweetId
       }, (err, response) => {
         if (err) {
-          console.log('ERRORDERP: Retweet!')
+          console.log('ERRORDERP: Retweet! because of ' + err)
         }
         console.log('SUCCESS: RT: ', data.statuses[rando].text, 'RANDO ID: ', rando)
       })
