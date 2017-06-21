@@ -17,8 +17,8 @@ const query = queryString()
 retweet()
 setInterval(retweet, config.twitterConfig.retweet)
 
-//favorite()
-//setInterval(retweet, config.twitterConfig.retweet)
+favorite()
+setInterval(retweet, config.twitterConfig.retweet)
 
 // reply to new follower
 const userStream = bot.stream('user')
