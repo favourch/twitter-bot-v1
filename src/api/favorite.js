@@ -34,14 +34,14 @@ const favorite = () => {
         return
       }
 
-      bot.post('statuses/retweet/:id', {
+      bot.post('favorites/create/:id', {
         
         id: retweetId
       }, (err, response) => {
         if (err) {
-          console.log('ERRORDERP: Retweet!')
+          console.log('ERRORDERP: favorite!')
         }
-        console.log('SUCCESS: RT: ', data.statuses[rando].text, 'RANDO ID: ', rando)
+        console.log('SUCCESS: favorited!! : ', data.statuses[rando].text, 'RANDO ID: ', rando)
       })
     }
   })
