@@ -22,7 +22,7 @@ const favorite = () => {
   }, (err, data, response) => {
     if (err) {
       console.log('ERRORDERP: Cannot Search Tweet!, Description here: ', err)
-    } else {
+    } else  if  (data && data.statuses[0]) {
       // grab tweet ID to retweet
       const rando = Math.floor(Math.random() * param.searchCount) + 1
       let retweetId
@@ -35,14 +35,15 @@ const favorite = () => {
       }
 
       bot.post('favorites/create/:id', {
-        
+
         id: retweetId
       }, (err, response) => {
         if (err) {
           console.log('ERRORDERP: favorite!')
           console.log ('*** favorite threw up ' + err + ' error ----------------------***')
-        }
+        }else {
         console.log('SUCCESS: favorited!! : ', data.statuses[rando].text, 'RANDO ID: ', rando)
+        }
       })
     }
   })
