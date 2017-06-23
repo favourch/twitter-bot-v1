@@ -26,7 +26,7 @@ module.exports = {
     zuchananTweet3:process.env.ZUCHANAN_TWEET_3,
     zuchananTweet4:process.env.ZUCHANAN_TWEET_4,
     zuchananTweet5:process.env.ZUCHANAN_TWEET_5,
-    zuchananTweet5:process.env.ZUCHANAN_TWEET_6,
+    zuchananTweet6:process.env.ZUCHANAN_TWEET_6,
     zuchananTweet7:process.env.ZUCHANAN_TWEET_7,
     zuchananTweet8:process.env.ZUCHANAN_TWEET_8,
     zuchananTweet9:process.env.ZUCHANAN_TWEET_9,
