@@ -21,8 +21,8 @@ retweet()
 setInterval(retweet, config.twitterConfig.retweet)
 
 //tweet regularly
-tweetFrequently(textFeed)
-setInterval(tweetFrequently, config.twitterConfig.tweet)
+//tweetFrequently(textFeed)
+//setInterval(tweetFrequently, config.twitterConfig.tweet)
 
 //favorites on keywords
 //favorite()
