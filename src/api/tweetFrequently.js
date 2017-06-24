@@ -21,7 +21,7 @@ function tweetFrequently(tweetArray) {
   }
    bot.post('statuses/update', tweet, (err, data, response) => {
     if (err) {
-      console.log('ERRORDERP tweet', err)
+      console.log('ERRORDERP tweet', err + '---------------------' + time)
     }
     else { console.log('tweet ' +  returnedTweetArray[rando] + ' ' + variableHashtag + ' successfully posted at ' + time)
       }
