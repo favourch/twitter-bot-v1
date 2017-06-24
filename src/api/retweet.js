@@ -10,6 +10,7 @@ const queryString = unique(param.queryString.split(','))
 const bot = new Twit(config.twitterKeys)
 
 const retweet = () => {
+  let time = new Date()
 
   const query = queryString()
 
@@ -21,7 +22,7 @@ const retweet = () => {
     count: param.searchCount
   }, (err, data, response) => {
     if (err) {
-      console.log('ERRORDERP: Cannot Search Tweet!, Description here: ', err)
+      console.log('ERRORDERP: Cannot Search Tweet!, Description here: ', err + '--------------' + time)
     } else if ((data && data.statuses[0])) {
       // grab tweet ID to retweet
       const rando = Math.floor(Math.random() * param.searchCount) + 1
@@ -30,7 +31,7 @@ const retweet = () => {
         console.log (JSON.stringify(data))
         retweetId = data.statuses[rando].id_str      
       } catch (e) {
-        console.log('ERRORDERP: Cannot assign retweetId because of ' + e)
+        console.log('ERRORDERP: Cannot assign retweetId because of ' + e + '-------------' + time)
         return
       }
 
@@ -39,13 +40,13 @@ const retweet = () => {
         id: retweetId
       }, (err, response) => {
         if (err) {
-          console.log('ERRORDERP: Retweet! because of ' + err)
+          console.log('ERRORDERP: Retweet! because of ' + err + '---------------' + time )
         }
-        console.log('SUCCESS: RT: ', data.statuses[rando].text, 'RANDO ID: ', rando)
+        console.log('SUCCESS: RT: ', data.statuses[rando].text, 'RANDO ID: ', rando + '-------------' + time)
       })
     }
     else {
-      console.log ('No search tweets returned for ' + query)
+      console.log ('No search tweets returned for ' + query + '-----------------' + time)
     }
   })
 }

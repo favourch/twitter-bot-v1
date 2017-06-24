@@ -11,6 +11,7 @@ const bot = new Twit(config.twitterKeys)
 
 // function: tweets back to user who followed
 function tweetNow(text) {
+   let time = new Date();
   let tweet = {
     status: text
   }
@@ -22,9 +23,9 @@ let selfName = text.search('/@zuchanannetwork/i')
   }else {
   bot.post('statuses/update', tweet, (err, data, response) => {
     if (err) {
-      console.log('ERRORDERP Reply', err)
+      console.log('ERRORDERP Reply', err + '-------------------' + time)
     }
-    console.log('SUCCESS: Replied: ', text)
+    console.log('SUCCESS: Replied: ', text + ' at ' + time)
     })
   }
 }
