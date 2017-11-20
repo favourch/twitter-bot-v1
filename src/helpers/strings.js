@@ -8,7 +8,13 @@ module.exports = {
     'Trending in Nigeria',
     'Education in Nigeria',
     'Schooling in Nigeria',
-    'Nollywood'
+    'Nollywood',
+    'Jobs',
+    'Employment',
+    'Politics',
+    'Travel',
+    'Masters',
+    'Visa'
   ],
   resultType: [
    'popular',

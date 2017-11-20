@@ -28,7 +28,6 @@ const retweet = () => {
       const rando = Math.floor(Math.random() * param.searchCount) + 1
       let retweetId
       try {
-        console.log (JSON.stringify(data))
         retweetId = data.statuses[rando].id_str      
       } catch (e) {
         console.log('ERRORDERP: Cannot assign retweetId because of ' + e + '-------------' + time)

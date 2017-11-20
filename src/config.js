@@ -40,6 +40,26 @@ module.exports = {
     zuchananTweet17:process.env.ZUCHANAN_TWEET_17,
     zuchananTweet18:process.env.ZUCHANAN_TWEET_18,
     zuchananTweet19:process.env.ZUCHANAN_TWEET_19,
-    zuchananTweet20:process.env.ZUCHANAN_TWEET_20
+    zuchananTweet20:process.env.ZUCHANAN_TWEET_20,
+    zuchananTweet1:process.env.ZUCHANAN_TWEET_21,
+    zuchananTweet2:process.env.ZUCHANAN_TWEET_22,
+    zuchananTweet3:process.env.ZUCHANAN_TWEET_23,
+    zuchananTweet4:process.env.ZUCHANAN_TWEET_24,
+    zuchananTweet5:process.env.ZUCHANAN_TWEET_25,
+    zuchananTweet6:process.env.ZUCHANAN_TWEET_26,
+    zuchananTweet7:process.env.ZUCHANAN_TWEET_27,
+    zuchananTweet8:process.env.ZUCHANAN_TWEET_28,
+    zuchananTweet9:process.env.ZUCHANAN_TWEET_29,
+    zuchananTweet10:process.env.ZUCHANAN_TWEET_30,
+    zuchananTweet11:process.env.ZUCHANAN_TWEET_31,
+    zuchananTweet12:process.env.ZUCHANAN_TWEET_32,
+    zuchananTweet13:process.env.ZUCHANAN_TWEET_33,
+    zuchananTweet14:process.env.ZUCHANAN_TWEET_34,
+    zuchananTweet15:process.env.ZUCHANAN_TWEET_35,
+    zuchananTweet16:process.env.ZUCHANAN_TWEET_36,
+    zuchananTweet17:process.env.ZUCHANAN_TWEET_37,
+    zuchananTweet18:process.env.ZUCHANAN_TWEET_38,
+    zuchananTweet19:process.env.ZUCHANAN_TWEET_39,
+    zuchananTweet20:process.env.ZUCHANAN_TWEET_40
   }
 }
