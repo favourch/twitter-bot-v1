@@ -50,6 +50,29 @@ function returnZuchananArrayString () {
     tweetArray.push(zuchananTweets.zuchananTweet18)
     tweetArray.push(zuchananTweets.zuchananTweet19)
     tweetArray.push(zuchananTweets.zuchananTweet20)
+    
+    tweetArray.push(zuchananTweets.zuchananTweet21)
+    tweetArray.push(zuchananTweets.zuchananTweet22)
+    tweetArray.push(zuchananTweets.zuchananTweet23)
+    tweetArray.push(zuchananTweets.zuchananTweet24)
+    tweetArray.push(zuchananTweets.zuchananTweet25)
+    tweetArray.push(zuchananTweets.zuchananTweet26)
+    tweetArray.push(zuchananTweets.zuchananTweet27)
+    tweetArray.push(zuchananTweets.zuchananTweet28)
+    tweetArray.push(zuchananTweets.zuchananTweet29)
+    tweetArray.push(zuchananTweets.zuchananTweet30)
+    tweetArray.push(zuchananTweets.zuchananTweet31)
+    tweetArray.push(zuchananTweets.zuchananTweet32)
+    tweetArray.push(zuchananTweets.zuchananTweet33)
+    tweetArray.push(zuchananTweets.zuchananTweet34)
+    tweetArray.push(zuchananTweets.zuchananTweet35)
+    tweetArray.push(zuchananTweets.zuchananTweet36)
+    tweetArray.push(zuchananTweets.zuchananTweet37)
+    tweetArray.push(zuchananTweets.zuchananTweet38)
+    tweetArray.push(zuchananTweets.zuchananTweet35)
+    tweetArray.push(zuchananTweets.zuchananTweet40)
+    
+    
  return tweetArray
 }
 
